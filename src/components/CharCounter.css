@@ -1,0 +1,38 @@
+.char-counter {
+  max-width: 600px;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: var(--char-bg);
+  color: var(--char-text);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.char-counter textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+  background-color: var(--char-input-bg);
+  color: var(--char-text);
+}
+
+.char-counter p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Theme variables */
+body.light {
+  --char-bg: #fff;
+  --char-text: #222;
+  --char-input-bg: #f9f9f9;
+}
+
+body.dark {
+  --char-bg: #2b2b2b;
+  --char-text: #f1f1f1;
+  --char-input-bg: #3a3a3a;
+}
