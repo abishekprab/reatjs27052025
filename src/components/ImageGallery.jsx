@@ -1,14 +1,14 @@
 import { useState } from 'react'
 import './ImageGallery.css'
 
-// Image URLs 
-const images = [
-  'https://via.placeholder.com/150/0000FF/FFFFFF?text=1',
-  'https://via.placeholder.com/150/FF0000/FFFFFF?text=2',
-  'https://via.placeholder.com/150/00FF00/FFFFFF?text=3',
-  'https://via.placeholder.com/150/FFA500/FFFFFF?text=4',
-  'https://via.placeholder.com/150/800080/FFFFFF?text=5',
-]
+// Importing images from the assets folder
+import image1 from '../assets/image1.png'
+import image2 from '../assets/image2.png'
+import image3 from '../assets/image3.png'
+import image4 from '../assets/image4.png'
+import image5 from '../assets/image5.png'
+
+const images = [image1, image2, image3, image4, image5]
 
 function ImageGallery() {
   const [selectedIndex, setSelectedIndex] = useState(null)
